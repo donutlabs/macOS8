@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Retro Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="dropdown.js"></script> <!-- Link to your JavaScript file -->
+</head>
+
+<body>
+
+    <div class="macintosh-desktop">
+        <div class="top-bar">
+            <div class="apple-icon">
+                <!-- Apple logo dropdown menu -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('appleDropdown')">
+                        <img src="apple-logotype.png" alt="Apple Icon" id="apple-icon">
+                    </button>
+                    <div class="dropdown-content" id="appleDropdown">
+                        <a href="#">About This Computer...</a>
+                        <a href="#">Apple System Profiler</a>
+                        <a href="#">AppleCD Audio Player</a>
+                        <a href="#">Automated Tasks</a>
+                        <a href="#">Calculator</a>
+                        <a href="#">Chooser</a>
+                        <a href="#">Connect To...</a>
+                        <a href="#">Control Panels</a>
+                        <a href="#">Find File</a>
+                        <a href="#">Jigsaw Puzzle</a>
+                        <a href="#">Key Caps</a>
+                        <a href="#">Note Pad</a>
+                        <a href="#">Recent Applications</a>
+                        <a href="#">Recent Documents</a>
+                        <a href="#">Scrapbook</a>
+                        <a href="#">Simple Sound</a>
+                        <a href="#">Stickies</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu items -->
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('workDropdown')">File</button>
+                    <div class="dropdown-content" id="workDropdown">
+                        <a href="#">New Folder</a>
+                        <a href="#">Open</a>
+                        <a href="#">Print</a>
+                        <a href="#">Move To Trash</a>
+                        <a href="#">Close Window</a>
+                        <a href="#">Get Info</a>
+                        <a href="#">Label</a>
+                        <a href="#">Sharing</a>
+                        <a href="#">Duplicate</a>
+                        <a href="#">Make Alias</a>
+                        <a href="#">Put Away</a>
+                        <a href="#">Find...</a>
+                        <a href="#">Show Original</a>
+                        <a href="#">Page Setup</a>
+                        <a href="#">Print Window</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('resumeDropdown')">Edit</button>
+                    <div class="dropdown-content" id="resumeDropdown">
+                        <a href="#">Undo</a>
+                        <a href="#">Cut</a>
+                        <a href="#">Copy</a>
+                        <a href="#">Paste</a>
+                        <a href="#">Clear</a>
+                        <a href="#">Select All</a>
+                        <a href="#">Show Clipboard</a>
+                        <a href="#">Preferences</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('testimonialsDropdown')">View</button>
+                    <div class="dropdown-content" id="testimonialsDropdown">
+                        <a href="#">as Icons</a>
+                        <a href="#">as Buttons</a>
+                        <a href="#">as List</a>
+                        <a href="#">as Window</a>
+                        <a href="#">as Pop-up Window</a>
+                        <a href="#">Clean Up</a>
+                        <a href="#">Arrange</a>
+                        <a href="#">View Options...</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('contactDropdown')">Special</button>
+                    <div class="dropdown-content" id="contactDropdown">
+                        <a href="#">Empty Trash</a>
+                        <a href="#">Eject</a>
+                        <a href="#">Erase Disk</a>
+                        <a href="#">Restart</a>
+                        <a href="#">Shut Down</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('helpDropdown')">Help</button>
+                    <div class="dropdown-content" id="helpDropdown">
+                        <a href="#">About Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mydiv">
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div id="mydivheader">  <div class="about-text">
+                <a href="your-link-here" class="blank-square"></a>
+                <span>About This Computer</span>
+            </div></div>
+          </div>
+<script src="dragit.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
